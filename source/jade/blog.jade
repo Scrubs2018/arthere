@@ -1,0 +1,107 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title blog
+		include inc/head
+	body(class="p-blog")
+		include partials/header
+		
+		.b-common-wrap
+			+b('section').blog
+				.b-container
+					+b('span').title._black artБлог
+					+b('nav').menu-a
+						+e('a')(href="#" data-count="204").item Все
+						+e('a')(href="#" data-count="20").item._active Живопись
+						+e('a')(href="#" data-count="20").item Графика
+						+e('a')(href="#" data-count="20").item Скульптура
+						+e('a')(href="#" data-count="20").item Постеры
+						+e('a')(href="#" data-count="20").item Репродукции
+					+b('').news
+						+e('').row
+							+e('').col
+								+art-news
+							+e('').col
+								+art-news
+							+e('').col
+								+b('').art-news
+									+e('img')(src="http://placehold.it/290x340").img
+									+e('').wrap
+										time.b-art-news__date 10.10.2015
+										+e('').watch
+											+b('span').eye 204
+											+b('span').comment 20
+									+e('span').title Искусство трансформации: 7 имен российского уличного и цифрового искусства
+									p Галереи и аукционные дома утратили  монополию на искусство. Вместо этого произведения появляются на стенах, рождаются из последовательности нулей и единиц или демонстрируются в виде световых перформансов на модных событиях
+									+b('a')(href="#").btn._gray Читать полностью
+							+e('').col
+								+art-news
+						+e('').row
+							+e('').col
+								+art-news
+							+e('').col
+								+art-news
+							+e('').col
+								+art-news
+							+e('').col
+								+b('').art-news
+									+e('img')(src="http://placehold.it/290x340").img
+									+e('').wrap
+										time.b-art-news__date 10.10.2015
+										+e('').watch
+											+b('span').eye 204
+											+b('span').comment 20
+									+e('span').title Искусство трансформации: 7 имен российского уличного и цифрового искусства
+									p Галереи и аукционные дома утратили  монополию на искусство. Вместо этого произведения появляются на стенах, рождаются из последовательности нулей и единиц или демонстрируются в виде световых перформансов на модных событиях
+									+b('a')(href="#").btn._gray Читать полностью
+						+e('').row
+							+e('').col
+								+b('').art-news
+									+e('img')(src="http://placehold.it/290x340").img
+									+e('').wrap
+										time.b-art-news__date 10.10.2015
+										+e('').watch
+											+b('span').eye 204
+											+b('span').comment 20
+									+e('span').title Искусство трансформации: 7 имен российского уличного и цифрового искусства
+									p Галереи и аукционные дома утратили  монополию на искусство. Вместо этого произведения появляются на стенах, рождаются из последовательности нулей и единиц или демонстрируются в виде световых перформансов на модных событиях
+									+b('a')(href="#").btn._gray Читать полностью
+							+e('').col
+								+art-news
+							+e('').col
+								+art-news
+							+e('').col
+								+art-news
+						+e('').row
+							+e('').col
+								+art-news
+							+e('').col
+								+art-news
+							+e('').col
+								+art-news
+							+e('').col
+								+art-news
+					+b('').navigation
+						+e('').left
+							+b('a')(href="#").prev-btn Предыдущая страница
+						+e('').middle
+							+b('').pagination
+								+e('a')(href="#").item 1
+								+e('a')(href="#").item._active 2
+								+e('a')(href="#").item 3
+								+e('a')(href="#").item 4
+								+e('a')(href="#").item 5
+								+e('a')(href="#").item ...
+								+e('a')(href="#").item 20
+						+e('').right
+							+b('a')(href="#").next-btn._active Следующая страница
+
+		include partials/footer-border
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

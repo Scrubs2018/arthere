@@ -1,0 +1,1686 @@
+.b-common-wrap
+	padding-bottom 160px
+
+.b-container
+	max-width 1250px
+	width 100%
+	margin 0 auto
+	position relative
+	height 100%
+	padding-left 25px
+	padding-right 25px
+
+.b-footer
+	position absolute
+	width 100%
+	bottom 0
+	left 0
+	height 160px
+	@media $max_xs
+		background-image none
+	&__img
+		display inline-block
+		max-width 100%
+		height auto
+	&__wrap
+		display table
+		width 100%
+		padding-top 30px
+		&_border
+			border-top 1px solid #cfcfcf
+	&__logo
+		width 214px
+		@media $max_sm
+			padding-bottom 10px
+	&__logo, &__content
+		display table-cell
+		vertical-align middle
+		@media $max_sm
+			display block
+			text-align center
+			margin 0 auto
+	&__content
+		text-align right
+	&__bottom
+		font-size 0
+	&__left, &__middle, &__right
+		display inline-block
+		vertical-align middle
+		@media $max_sm
+			display block
+			margin 0 auto
+			width 100%
+			padding-bottom 16px
+	&__middle
+		font-size 0
+		margin-left 13px
+		margin-right 13px
+		@media $max_sm
+			display none
+			margin 0
+		&_hide
+			display none
+			@media $max_sm
+				display block
+	&__right
+		max-width 83px
+		height auto
+	&__left
+		max-width 405px
+		@media $max_sm
+			display none
+		&_hide
+			display none
+			@media $max_sm
+				display block
+				max-width 100%
+	&__copyright
+		display block
+	&__text
+		display block
+		font-size 11px
+		color #a9a9a9
+		font-weight 300
+	&__copyright
+		font-size 11px
+		text-transform uppercase
+		color #a9a9a9
+		font-weight 300
+	&__top
+		padding-bottom 23px
+	&__item
+		display inline-block
+		vertical-align middle
+		width 20%
+		margin 0 17px
+		position relative
+		&_vk
+			sprite($s-vk)
+		&_insta
+			sprite($s-insta)
+		&_face
+			sprite($s-face)
+		&_g
+			sprite($s-g)
+		&_skype
+			sprite($s-skype)
+	&__swd
+		width 100%
+		height auto
+
+.p-school-paper .b-footer
+	background url(../img/footer.png) top right no-repeat
+
+.b-menu-footer
+	position relative
+	z-index 10
+	&__item
+		margin-left 40px
+		font-weight 500
+		color #2a2a2a
+		font-size 16px
+		text-decoration none
+		@media $max_xs
+			padding-bottom 15px
+			display inline-block
+
+.b-header
+	padding-top 30px
+	margin-bottom -8px
+
+.b-logo
+	display table
+	margin 0 auto
+	&__img
+		max-width 100%
+		height auto
+
+.b-menu
+	text-align center
+	padding-top 22px
+	padding-bottom 28px
+	position relative
+	&__item
+		margin-left 43px
+		display inline-block
+		vertical-align middle
+		margin-right 43px
+		font-size 19px
+		font-family 'Book Antiqua'
+		font-weight 400
+		color #2a2a2a
+		text-decoration none
+		@media $max_sm
+			margin-left 20px
+			margin-right 20px
+		@media $max_xs
+			display block
+			width 100%
+			height 48px
+			margin 0 auto
+			line-height 48px
+			border-top 1px solid #ececec
+		&:hover, &_active
+			color #c88e42
+		&:first-child
+			margin-left 0
+		&:last-child
+			margin-right 0
+	&__wrap
+		margin 0
+		height 100%
+		background-color alpha(#fff, 0.9)
+		@media $max_xs
+			margin-top 25px
+			position fixed
+			display none
+			width 100%
+			z-index 100
+			left 0
+			padding-left 20px
+			padding-right 20px
+		&_visible
+			@media $max_xs
+				display block
+	&__btn-menu
+		height 28px
+		line-height 28px
+		display inline-block
+		border 1px solid #a9a9a9
+		border-radius 20px
+		display none
+		text-decoration none
+		color #9a9a9a
+		position absolute
+		width 106px
+		margin 0 auto
+		top 9px
+		left 0
+		bottom 0
+		right 0
+		&:active
+			color #2a2a2a
+			border 1px solid #2a2a2a
+			&:after
+				content ''
+				position absolute
+				sprite($s-menu-black)
+				left 10px
+				vAlign()
+		@media $max_xs
+			display inline-block
+		&:after
+			content ''
+			position absolute
+			sprite($s-menu)
+			left 10px
+			vAlign()
+	&__btn-menu-close
+		height 28px
+		line-height 28px
+		display inline-block
+		border 1px solid #a9a9a9
+		border-radius 20px
+		display none
+		text-decoration none
+		color #9a9a9a
+		position absolute
+		width 120px
+		margin 0 auto
+		top 9px
+		left 0
+		bottom 0
+		right 0
+		&:active
+			color #2a2a2a
+			border 1px solid #2a2a2a
+			&:after
+				content ''
+				position absolute
+				sprite($s-close-black)
+				left 11px
+				vAlign()
+		// @media $max_xs
+		// 	display inline-block
+		&:after
+			content ''
+			position absolute
+			sprite($s-close-menu)
+			left 11px
+			vAlign()
+
+.b-search
+	margin 0 auto
+	position relative
+	max-width 970px
+	z-index 10
+	&__input
+		border-radius 60px
+		height 36px
+		line-height 36px
+		padding 0 45px 0 16px
+		font-size 14px
+		display block
+		border 1px solid #a9a9a9
+		width 100%
+		placeholder(#a9a9a9)
+		outline none
+	&__submit
+		position absolute
+		border 0
+		right 14px
+		cursor pointer
+		outline none
+		background-color transparent
+		sprite($s-search)
+		vAlign()
+
+.b-school-paper
+	background url(../img/people.png) bottom -39px right no-repeat, url(../img/background-text.jpg)
+	padding-bottom 70px
+	position relative
+	&:before
+		content ''
+		position absolute
+		background-image url(../img/up-pink.png)
+		background-repeat repeat x
+		background-position center 0
+		width 100%
+		height 13px
+		top -13px
+		display block
+	&:after
+		content ''
+		position absolute
+		background-image url(../img/down-pink.png)
+		background-repeat repeat x
+		background-position center 0
+		bottom -13px
+		width 100%
+		height 13px
+		display block
+	&_no-background
+		background-image none
+		&:after
+			content ''
+			display none
+		&:before
+			content ''
+			display none
+	&__slider-wrap
+		position relative
+	&__text
+		p
+			padding 0 50px
+			@media $max_sm
+				padding 0 20px
+	p.none
+		@media $max_sm
+			display none
+	th._width
+			width 35%
+	&__layout
+		position absolute
+		width 100px
+		text-align center
+		bottom 0
+		left 45%
+		z-index 100
+		height 50px
+	&__key, &__value
+		color #fff
+		display inline-block
+		font-size 20px
+		margin-top 16px
+	&__key
+		position relative
+		padding-right 15px
+		margin-right 5px
+		&:after
+			content ''
+			position absolute
+			sprite($s-slash)
+			right 0
+			vAlign()
+	&__wrap
+		box-shadow 0 0 15px -6px (#000)
+	&__wrap-a
+		background-color #fff
+		position relative
+		z-index 10
+		padding-top 10px
+	&__btn-wrap
+		text-align center
+		padding-bottom 26px
+	&__btn-wrap-a
+		text-align center
+		padding-top 30px
+	&__img
+		width 100%
+		height auto
+	iframe.video
+		@media $max_sm
+			display none
+
+.b-image-wrap
+	display table
+	width 100%
+	background-image url(../img/back.jpg)
+	background-repeat no-repeat
+	background-position center 0
+	background-size cover
+	min-height 500px
+	height 500px
+	@media $max_sm
+		min-height 410px
+		height 410px
+	&__left, &__right
+		display table-cell
+		vertical-align bottom
+		@media $max_xs
+			display block
+	&__right
+		width 290px
+		vertical-align top
+		height 100%
+		background-color alpha(#fff, .9)
+		@media $max_xs
+			width 100%
+	&__left
+		vertical-align bottom
+		padding 30px
+		min-height 200px
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,1e1e11+100&0+0,0.73+100 */
+		background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(30,30,17,0.73) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(30,30,17,0.73) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(30,30,17,0.73) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		p
+			padding 0
+			color #fff
+			margin 0
+	&__text-wrap
+		display table
+		width 100%
+		padding 30px
+		height 100%
+		color #a9a9a9
+	&__title
+		padding-bottom 10px
+		padding-right 30px
+		color #fff
+		display block
+		font-size 20px
+		font-weight 500
+
+.b-title
+	color #c88e42
+	font-size 28px
+	display block
+	padding-top 35px
+	padding-bottom 26px
+	text-align center
+	font-family 'Book Antiqua'
+	font-weight 400
+	&_black
+		color #2a2a2a
+	@media $max_sm
+		padding-top 30px
+		padding-bottom 15px
+		font-size 26px
+	&_no-padding
+		padding-bottom 0
+
+.b-btn-left
+	position relative
+	text-decoration none
+	color #2a2a2a
+	font-size 16px
+	text-align left
+	display inline-block
+	font-family 'Book Antiqua'
+	font-weight 600
+	background-color transparent
+	&:after
+		content ''
+		position absolute
+		left -48px
+		vAlign()
+		sprite($s-btn-left)
+	&_back
+		background-color transparent
+		border 0
+		padding-left 50px
+		background-image url(../img/right-dark.png)
+		background-position left center
+		height 30px
+		background-repeat no-repeat
+	&_black
+		&:after
+			content ''
+			background-color none
+			position absolute
+			left -48px
+			vAlign()
+			sprite($s-right-dark)
+	&_brown
+		&:after
+			content ''
+			position absolute
+			left -48px
+			vAlign()
+			sprite($s-btn-right)
+	&:hover
+		color alpha(#2a2a2a, .8)
+
+.b-prev-btn
+	position relative
+	padding-left 48px
+	text-decoration none
+	font-size 16px
+	font-family 'Book Antiqua'
+	font-weight 600
+	color #cacaca
+	&:after
+		content ''
+		position absolute
+		left 0
+		vAlign()
+		sprite($s-left-white)
+	&:hover, &_active
+		&:after
+			sprite($s-left-gray)
+	&_active
+		color #2a2a2a
+	&:hover
+		color alpha(#2a2a2a, .8)
+	&_brown
+		&:after
+			content ''
+			position absolute
+			left 0
+			vAlign()
+			sprite($s-btn-left-white)
+		&:hover, &_active
+			&:after
+				sprite($s-btn-left)
+
+.b-next-btn
+	color #cacaca
+	position relative
+	padding-right 48px
+	text-decoration none
+	font-family 'Book Antiqua'
+	font-size 16px
+	font-weight 600
+	&:after
+		content ''
+		position absolute
+		right 0
+		vAlign()
+		sprite($s-right-gray)
+	&:hover, &_active
+		&:after
+			sprite($s-right-dark)
+	&_active
+		color #2a2a2a
+	&:hover
+		color alpha(#2a2a2a, .8)
+	&_brown
+		&:after
+			content ''
+			position absolute
+			right 0
+			vAlign()
+			sprite($s-btn-right-white)
+		&:hover, &_active
+			&:after
+				sprite($s-btn-right)
+
+.b-event
+	&__text
+		display block
+		font-size 13px
+		margin-bottom 7px
+		&_inline
+			display inline-block
+	&__date
+		font-size 18px
+		color #2a2a2a
+		font-weight 500
+		padding-bottom 24px
+		display block
+		text-transform uppercase
+	&__date-a
+		display inline-block
+		font-size 13px
+		padding-bottom 27px
+	&__event
+		display block
+		font-size 18px
+		color #2a2a2a
+		font-weight 500
+		padding-bottom 20px
+	&__head
+		padding-bottom 28px
+
+.b-eye, .b-comment
+	position relative
+	display inline-block
+	color #a9a9a9
+	font-size 13px
+	&_brown
+		color #c88e42
+	&:after
+		content ''
+		position absolute
+		left 0
+		vAlign()
+		sprite($s-eye-brown)
+
+.b-eye
+	padding-left 20px
+	&:after
+		sprite($s-eye-brown)
+.b-comment
+	padding-left 25px
+	&:after
+		left 10px
+		sprite($s-comment)
+
+.b-sign
+	margin 30px 50px
+	padding-bottom 50px
+	@media $max_sm
+		margin 20px
+		padding-bottom 20px
+	&__wrap
+		padding 27px
+		background-color #fbf3ee
+	&__title
+		color #c88e42
+		font-size 18px
+		font-weight 500
+		display block
+		padding-bottom 16px
+	&__number
+		color #2a2a2a
+		font-size 26px
+		padding-bottom 15px
+		display block
+		font-family 'Book Antiqua'
+
+.b-btn
+	font-size 12px
+	color #c88e42
+	border 1px solid #c88e42
+	text-decoration none
+	line-height 26px
+	display inline-block
+	padding 0 11px
+	border-radius 20px
+	white-space nowrap
+	@media $max_xs
+		font-size 10px
+	&_gray
+		border 1px solid #a9a9a9
+		color #a9a9a9
+	&_white
+		background-color transparent
+
+.b-section
+	background-image url(../img/background-text.jpg)
+	padding 30px 0
+	position relative
+	&:before
+		content ''
+		position absolute
+		background-image url(../img/up-pink.png)
+		background-repeat repeat x
+		background-position center 0
+		width 100%
+		height 13px
+		top -13px
+		display block
+	&:after
+		content ''
+		position absolute
+		background-image url(../img/down-pink.png)
+		background-repeat repeat x
+		background-position center 0
+		bottom -13px
+		width 100%
+		height 13px
+		display block
+	&__wrap
+		overflow hidden
+		background-color #fff
+		padding 30px
+
+.b-galary
+	background-color #f2f2f2
+	position relative
+	padding-bottom 40px
+	margin-top -7px
+	&:before
+		content ''
+		position absolute
+		background-image url(../img/up-gray.png)
+		background-repeat repeat x
+		background-position center 0
+		width 100%
+		height 13px
+		top -13px
+		display block
+	&:after
+		content ''
+		position absolute
+		background-image url(../img/down-gray.png)
+		background-repeat repeat x
+		background-position center 0
+		bottom -13px
+		width 100%
+		height 13px
+		display block
+	&__cols-wrap
+		font-size 0
+		margin-left -15px
+		margin-right -15px
+		@media $max_sm
+			margin 0 -10px
+	&__col
+		display inline-block
+		vertical-align top
+		width 25%
+		padding-bottom 24px
+		font-size $rootFontSize
+		padding-left 15px
+		padding-right 15px
+		@media $max_sm
+			width 50%
+			padding-left 10px
+			padding-right 10px
+		@media $max_xs
+			width 100%
+
+.b-menu-a
+	text-align center
+	padding-bottom 32px
+	padding-top 13px
+	@media $max_sm
+		padding 0
+	&_padding
+		@media $max_sm
+			padding-top 15px
+	&__item
+		vertical-align middle
+		padding-left 20px
+		text-decoration none
+		padding-right 20px
+		color #a9a9a9
+		font-size 16px
+		font-weight 500
+		@media $max_sm
+			display inline-block
+			padding-bottom 10px
+		&_brown
+			color #e0c4a0
+		&:after
+			content attr(data-count)
+			height 26px
+			margin-left 6px
+			line-height 26px
+			width 26px
+			text-align center
+			color #fff
+			font-size 11px
+			border-radius 50%
+			background-color #a9a9a9
+			display inline-block
+		&_brown
+			&:after
+				background-color #e0c4a0
+		&:hover, &_active
+			color #2a2a2a
+			&:after
+				background-color #2a2a2a
+		&_brown
+			&:hover
+				color #c88e42
+				&:after
+					background-color #c88e42
+		&_brown_active
+			color #c88e42
+			&:after
+				background-color #c88e42
+			&:hover
+				color #c88e42
+				&:after
+					background-color #c88e42
+
+.b-navigation
+	display table
+	width 100%
+	&__left, &__middle, &__right
+		display table-cell
+		vertical-align top
+	&__right
+		text-align right
+		@media $max_xs
+			display none
+	&__left
+		@media $max_xs
+			display none
+	&__middle
+		text-align center
+
+.b-picture
+	&__img
+		width 100%
+		height auto
+	&__image-wrap
+		position relative
+		display block
+		border-bottom 2px solid #adadad
+		margin-bottom 17px
+		&:after
+			content ''
+			position absolute
+			z-index 10
+			top -4px
+			left 18px
+			sprite($s-nail)
+		&:before
+			content ''
+			position absolute
+			z-index 10
+			top -4px
+			right 18px
+			sprite($s-nail)
+	&__title
+		display block
+		margin-bottom 13px
+	&__autor
+		color #a9a9a9
+		font-size 14px
+		display block
+		margin-bottom 13px
+	&__art
+		display table
+		border-bottom 1px solid #6d6d6d
+		color #2a2a2a
+		margin-bottom 13px
+
+.b-pagination
+	&__item
+		margin-right 3px
+		width 27px
+		height 27px
+		line-height 27px
+		font-size 12px
+		text-decoration none
+		border 1px solid #a9a9a9
+		border-radius 50%
+		color #a9a9a9
+		display inline-block
+		&:hover, &_active
+			border 1px solid #2a2a2a
+			color #2a2a2a
+		&_brown
+			border 1px solid #2a2a2a
+			color #2a2a2a
+			&:hover
+				border 1px solid #c88e42
+				color #c88e42
+		&_brown_active
+			border 1px solid #c88e42
+			color #c88e42
+
+.b-school
+	background-image url(../img/background-text.jpg)
+	padding-bottom 70px
+	position relative
+	@media $max_sm
+		padding-bottom 45px
+	&:before
+		content ''
+		position absolute
+		background-image url(../img/up-pink.png)
+		background-repeat repeat x
+		background-position center 0
+		width 100%
+		height 13px
+		top -13px
+		display block
+	&:after
+		content ''
+		position absolute
+		background-image url(../img/down-pink.png)
+		background-repeat repeat x
+		background-position center 0
+		bottom -13px
+		width 100%
+		height 13px
+		display block
+	&__cols-wrap
+		font-size 0
+		margin-left -21px
+		margin-right -21px
+	&__col
+		display inline-block
+		vertical-align top
+		font-size $rootFontSize
+		width 50%
+		padding-left 21px
+		padding-right 21px
+		padding-bottom 30px
+		@media $max_xs
+			width 100%
+	&__bottom-input
+		display table
+		margin 0 auto
+		padding-top 50px
+		@media $max_sm
+			padding-top 35px
+		@media $max_xs
+			padding-top 20px
+	&__left, &__right
+		display table-cell
+		vertical-align middle
+		@media $max_xs
+			display block
+	&__left
+		width 480px
+		@media $max_xs
+			width 258px
+			padding-bottom 15px
+	&__right
+		padding-left 10px
+		@media $max_xs
+			text-align center
+			padding 0
+
+.b-input
+	height 36px
+	line-height 36px
+	width 100%
+	padding 0 15px
+	display inline-block
+	border 1px solid #e0e0e0
+	border-radius 20px
+	placeholder(#b6b6b6)
+	color #2a2a2a
+	&:hover, &:focus
+		border-color #c88e42
+
+.b-textarea
+	padding 10px 15px
+	width 100%
+	border 1px solid #e0e0e0
+	border-radius 20px
+	placeholder(#b6b6b6)
+	color #2a2a2a
+	&:hover, &:focus
+		border-color #c88e42
+
+.b-event-a
+	&_horizont
+		font-size 0
+	&__img
+		width 100%
+		height auto
+		margin-bottom 15px
+		&_tablet
+			display none
+			@media $max_sm
+				display block
+		&_horizont
+			display inline-block
+			vertical-align top
+			width 35%
+			@media $max_sm
+				width 100%
+				display none
+	&__horizont
+		display inline-block
+		vertical-align top
+		width 65%
+		padding-left 30px
+		padding-top 10px
+		@media $max_sm
+			display block
+			width 100%
+			padding 0
+	&__date, &__wrap, &__watch
+		font-size 13px
+		display inline-block
+		vertical-align middle
+		color #c88e42
+	&__date
+		padding-right 10px
+		&_gray
+			padding-right 10px
+			font-size 13px
+			display inline-block
+			color #b6b6b6
+	&__title
+		margin-bottom 13px
+	&__text
+		margin-bottom 13px
+		p
+			margin 0
+	&__wrap
+		margin-bottom 12px
+		width 100%
+		display table
+	&__left, &__right
+		display table-cell
+		vertical-align middle
+	&__right
+		text-align right
+	&__btn-wrap
+		@media $max_sm
+			padding-bottom 35px
+
+.b-heading
+	text-decoration none
+	text-transform uppercase
+	color #c88e42
+	font-size 13px
+	padding 2px 3px
+	border 1px solid #c88e42
+	@media $max_xs
+		font-size 9px
+
+.b-title-a
+		font-size 20px
+		color #2a2a2a
+		font-weight 500
+		display block
+
+.b-services
+	padding-bottom 50px
+	&__top
+		padding 30px 0 30px
+		border-top 1px solid #cfcfcf
+		border-bottom 1px solid #cfcfcf
+	&__bottom
+		padding 30px 0 0
+		font-size 0
+		margin-left -21px
+		margin-right -21px
+	&__col
+		display inline-block
+		vertical-align top
+		width 50%
+		font-size $rootFontSize
+		padding-left 21px
+		padding-right 21px
+		padding-bottom 30px
+		@media $max_xs
+			width 100%
+			padding-bottom 0
+	&__text
+		&_short
+			height 160px
+			overflow hidden
+			margin-bottom 1.25rem
+
+.b-swiper
+	height 130px
+	border-bottom 1px solid #e7d5b5
+	position relative
+	.swiper-slide
+		display inline-block
+		vertical-align middle
+		font-size $rootFontSize
+		margin 0 auto
+		width 50px
+		text-decoration none
+		@media $max_xs
+			width 30px
+		&_weekend
+			.b-swiper__day, .b-swiper__number
+				color #c88e42
+		&_event
+			.b-swiper__number
+				color #fef9f1
+				background-color #2a2a2a
+		&_current
+			.b-swiper__number
+				border 1px solid #2a2a2a
+		&_event.swiper-slide_weekend
+			.b-swiper__number
+				background-color #c88e42
+		&_current.swiper-slide_weekend
+			.b-swiper__number
+				border 1px solid #c88e42
+	&__day, &__number
+		text-align center
+		display block
+	&__day
+		font-size 11px
+		color #2a2a2a
+		text-transform uppercase
+		padding-bottom 24px
+		@media $max_xs
+			padding-bottom 15px
+			padding-left 12px
+		// &_weekend
+		// 	color #c88e42
+	&__number
+		font-size 22px
+		font-family 'Book Antiqua'
+		color #2a2a2a
+		height 43px
+		width 43px
+		line-height 43px
+		border 1px solid transparent
+		margin 0 auto
+		border-radius 50%
+		// &_weekend
+		// 	color #c88e42
+		// &_event-black
+		// 	background-color #2a2a2a
+		// 	color #fef9f1
+		// &_event
+		// 	background-color #c88e42
+		// 	color #fef9f1
+	.swiper-container
+		padding 0 60px
+		height 100%
+		font-size 0
+		@media $max_xs
+			padding 0
+		&:after
+			content ''
+			position absolute
+			sprite($s-left-white-a)
+			left 0
+			z-index 1
+			top -17px
+		&:before
+			content ''
+			position absolute
+			sprite($s-right-white-a)
+			right 0
+			z-index 2
+			top -17px
+	.swiper-prev
+		z-index 15
+		position absolute
+		cursor pointer
+		left 0
+		top 15px
+		sprite($s-btn-left)
+	.swiper-next
+		z-index 15
+		position absolute
+		cursor pointer
+		right 0
+		top 15px
+		sprite($s-btn-right)
+
+.b-slider
+	position relative
+	&__img
+		width 100%
+		height auto
+	.owl-controls
+		position absolute
+		bottom 0
+		text-align center
+		width 100%
+		.owl-nav
+			display block
+			position relative
+			z-index 50
+			background-color alpha(#000, .3)
+			height 50px
+			width 100%
+		.owl-prev
+			display block
+			position absolute
+			bottom 10px
+			left 50px
+			z-index 100
+			sprite($s-slider-left)
+			font-size 0
+			@media $max_xs
+				bottom 5px
+				left 30px
+		.owl-next
+			display block
+			position absolute
+			bottom 10px
+			right 50px
+			z-index 100
+			sprite($s-slider-right)
+			font-size 0
+			@media $max_xs
+				bottom 5px
+				right 30px
+
+.b-comments
+	padding 50px
+	background-color #f9f9f9
+	@media $max_sm
+		padding 20px
+	&__top
+		padding-bottom 32px
+		display table
+		width 100%
+	&__left, &__middle, &__right
+		display table-cell
+		vertical-align middle
+		font-size $rootFontSize
+	&__title
+		@media $max_xs
+			font-size 14px
+	&__right
+		text-align right
+	&__middle
+		position relative
+		width 100%
+		@media $max_xs
+			display none
+		&:before
+			content ''
+			position absolute
+			height 1px
+			width 95%
+			left 20px
+			display block
+			background-color #e3e3e3
+			@media $max_sm
+				width 90%
+	&__text
+		p
+			padding-left 0
+			font-size 14px
+	&__row
+		padding-bottom 20px
+		margin-bottom 36px
+		border-bottom 1px solid #e3e3e3
+		padding-left 50px
+		@media $max_xs
+			padding 0
+		&_none
+			@media $max_sm
+				display none
+		&:last-child
+			padding-bottom 0
+			margin-bottom 0
+			border-bottom 0
+	&__name
+		display block
+		position relative
+		font-size 14px
+		text-transform uppercase
+		font-family 'Book Antiqua'
+		font-weight 600
+		@media $max_xs
+			padding-left 50px
+		&:after
+			content ''
+			position absolute
+			left -50px
+			top -5px
+			sprite($s-commit)
+			@media $max_xs
+				left 0
+	&__date
+		color #a9a9a9
+		font-size 13px
+		@media $max_xs
+			padding-left 50px
+
+.b-blog
+	padding-bottom 50px
+
+.b-news
+	&__row
+		padding-bottom 30px
+		font-size 0
+		margin-left -15px
+		margin-right -15px
+		@media $max_sm
+			padding-bottom 0
+	&__col
+		display inline-block
+		vertical-align top
+		width 25%
+		font-size $rootFontSize
+		padding-left 15px
+		padding-right 15px
+		margin-bottom 30px
+		@media $max_sm
+			width 50%
+			padding-bottom 20px
+		@media $max_xs
+			width 100%
+
+.b-art-news
+	&__img
+		width 100%
+		height auto
+		margin-bottom 15px
+	&__wrap
+		margin-bottom 13px
+		display table
+		width 100%
+	&__date, &__watch
+		display table-cell
+		vertical-align middle
+	&__watch
+		text-align right
+	&__date
+		font-size 13px
+		color #a9a9a9
+	&__title
+		display block
+		font-size 18px
+		font-weight 500
+		margin-bottom 13px
+	&__text
+		margin-bottom 13px
+		p
+			margin 0
+
+.b-contact
+	padding-bottom 55px
+	max-width 1020px
+	margin 0 auto
+	font-size 0
+	&__left, &__right
+		display inline-block
+		vertical-align top
+		width 50%
+		font-size $rootFontSize
+		@media $max_xs
+			display block
+			width 100%
+
+.b-link
+	&__title-wrap
+		padding-bottom 22px
+	&__item
+		margin-bottom 10px
+		&:last-child
+			margin-bottom 0
+	&__btn-wrap
+		margin-top 16px
+		display inline-block
+
+.b-address
+	&__title-wrap
+		padding-bottom 15px
+	&__item
+		padding 13px 0 13px 50px
+		font-family 'Book Antiqua'
+		font-weight 600
+		font-size 18px
+		display block
+		position relative
+		color #2a2a2a
+		text-decoration none
+		@media $max_sm
+			font-size 16px
+		@media $max_xs
+			line-height 20px
+		&_email
+			color #c88e42
+			text-transform uppercase
+			&:after
+				content ''
+				position absolute
+				sprite($s-email)
+				vAlign()
+				left 0
+		&_phone
+			&:after
+				content ''
+				position absolute
+				sprite($s-phone-a)
+				vAlign()
+				left 0
+		&_skype
+			&:after
+				content ''
+				position absolute
+				sprite($s-skype-a)
+				vAlign()
+				left 0
+
+.b-btn-right
+	position relative
+	padding-right 48px
+	text-decoration none
+	background-color #fff
+	border none
+	font-size 16px
+	color #2a2a2a
+	font-family 'Book Antiqua'
+	font-weight 600
+	&:after
+		content ''
+		position absolute
+		right 0
+		vAlign()
+		sprite($s-right-dark)
+	&_back
+		background-image url(../img/right-dark.png)
+		background-position center right
+		background-repeat no-repeat
+		height 30px
+	&:hover
+		color alpha(#2a2a2a, .8)
+
+.b-main-art
+	padding-bottom 45px
+	&__cols-wrap
+		font-size 0
+		margin-left -15px
+		margin-right -15px
+	&__col
+		display inline-block
+		vertical-align top
+		width 25%
+		font-size $rootFontSize
+		padding-left 15px
+		padding-right 15px
+		@media $max_sm
+			width 50%
+		@media $max_xs
+			width 100%
+	&__item
+		padding-bottom 30px
+	&__btn-wrap
+		text-align center
+		padding-top 26px
+
+.b-main-school
+	padding-bottom 60px
+	position relative
+	background url(../img/people.png) right top no-repeat, url(../img/background-text.jpg)
+	@media $max_sm
+		padding-bottom 45px
+	&:before
+		content ''
+		position absolute
+		background-image url(../img/up-pink.png)
+		background-repeat repeat x
+		background-position center 0
+		width 100%
+		height 13px
+		top -13px
+		display block
+	&:after
+		content ''
+		position absolute
+		background-image url(../img/down-pink.png)
+		background-repeat repeat x
+		background-position center 0
+		bottom -13px
+		width 100%
+		height 13px
+		display block
+	&__left
+		margin-right 330px
+		@media $max_sm
+			margin-right 0
+	&__right
+		width 330px
+		float right
+		padding-left 26px
+		@media $max_sm
+			float none
+			padding-left 0
+			margin 0 auto
+			padding-bottom 30px
+		@media $max_xs
+			width inherit
+	&__btn-wrap
+		padding-left 50px
+		padding-top 25px
+		@media $max_sm
+			text-align center
+
+.b-main-about
+	padding-bottom 60px
+	@media $max_sm
+		padding-bottom 45px
+	&__btn-wrap
+		text-align center
+		margin-top 26px
+	&__img
+		width 100%
+		height auto
+	&__text
+		margin-top 37px
+		p
+			margin 0
+
+.b-main-galary
+	padding-bottom 40px
+	background-color #f2f2f2
+	position relative
+	@media $max_sm
+		padding-left 20px
+		padding-right 20px
+	@media $max_xs
+		padding 0
+	&:before
+		content ''
+		position absolute
+		background-image url(../img/up-gray.png)
+		background-repeat repeat x
+		background-position center 0
+		width 100%
+		height 13px
+		top -13px
+		display block
+	&:after
+		content ''
+		position absolute
+		background-image url(../img/down-gray.png)
+		background-repeat repeat x
+		background-position center 0
+		bottom -13px
+		width 100%
+		height 13px
+		display block
+	&__btn-wrap
+		padding-top 50px
+		text-align center
+		@media $max_sm
+			padding-top 15px
+	&__cols-wrap
+		font-size 0
+		margin-left -15px
+		margin-right -15px
+		position relative
+		z-index 10
+		@media $max_sm
+			margin 0
+		&:after
+			content ''
+			position absolute
+			background-image url(../img/art-dance.png)
+			background-repeat no-repeat
+			left -170px
+			z-index -1
+			top -89px
+			width 370px
+			height 436px
+			display block
+			@media $max_sm
+				left -80px
+				width 360px
+	&__col
+		display inline-block
+		width 25%
+		vertical-align top
+		font-size $rootFontSize
+		padding-left 15px
+		padding-right 15px
+		@media $max_sm
+			width 50%
+			padding-bottom 15px
+		@media $max_xs
+			width 100%
+	&__text
+		text-align center
+		display block
+		margin-bottom 27px
+		color #a9a9a9
+		font-size 14px
+		a
+			color #2a2a2a
+			text-decoration none
+			border-bottom 2px solid #ababab
+
+.b-main-link
+	padding-bottom 50px
+	@media $max_sm
+		padding-bottom 40px
+	&__wrap
+		width 560px
+		margin 0 auto
+		@media $max_xs
+			width inherit
+	&__btn-wrap
+		padding-top 26px
+		text-align center
+		@media $max_sm
+			padding-top 16px
+
+.b-calendar
+	width 100%
+	height 100%
+	margin 0 auto
+	padding 0 15px
+	&__row
+		height 38px
+		line-height 38px
+		text-align center
+		font-size 0
+		@media $max_xs
+			height 31px
+			line-height 31px
+			margin-bottom 7px
+		&_month
+			font-size 16px
+			color #2a2a2a
+	&__col
+		display inline-block
+		vertical-align middle
+		text-decoration none
+		width (100/7)%
+		font-size 14px
+		color #a9a9a9
+		&_event
+			background-color #e0e0e0
+			border-radius 50%
+			color #2a2a2a
+			font-weight 500
+		&_weekend.b-calendar__col_event
+			background-color #c88e42
+			color #fff
+		&_weekend
+			color #c88e42
+		&_next-month
+			color #e0e0e0
+
+.b-slider-calendar
+	margin 0 auto
+	background-image url(../img/calendar.png)
+	background-repeat no-repeat
+	background-position center 0
+	background-size cover
+	width 293px
+	height 314px
+	position relative
+	@media $max_xs
+		background-position left bottom
+		width 250px
+	&__title
+		font-size 18px
+		color #2a2a2a
+		font-weight 500
+		line-height 19px
+	&__top
+		text-align center
+		height 60px
+		padding-top 11px
+		border-bottom 1px solid #e0e0e0
+	.owl-controls
+		position absolute
+		top 70px
+		width 100%
+		.owl-prev
+			display block
+			position absolute
+			top 0
+			left 19px
+			font-size 0
+			sprite($s-left-calendar)
+		.owl-next
+			display block
+			position absolute
+			top 0
+			right 19px
+			font-size 0
+			sprite($s-right-calendar)
+
+.b-input-a
+	&__native
+		display none
+	&__custom
+		display inline-block
+		vertical-align middle
+		// width 22px
+		// height 22px
+		border-radius 2px
+		position relative
+		&:after
+			content ''
+			position absolute
+			sprite($s-right-dark)
+			vAlign()
+			right 0
+
+.owl-controls clickable
+	display none
+
+.b-popup
+	background-color #fff
+	min-height 450px
+	border-radius 20px
+	position relative
+	min-width 640px
+	margin 0 10px
+	text-align left
+	&__close
+		position absolute
+		transform rotate(-90deg)
+		right -60px
+		top 85px
+		color #fff
+		font-size 16px
+		font-family 'Book Antiqua'
+		font-weight 600
+		text-decoration none
+		&:after
+			content ''
+			position absolute
+			sprite($s-close)
+			vAlign()
+	&__item
+		padding-bottom 10px
+		display block
+		width 100%
+		padding-left 40px
+		padding-right 40px
+	&__btn-wrap
+		padding-top 26px
+		text-align center

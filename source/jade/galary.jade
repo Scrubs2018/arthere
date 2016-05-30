@@ -1,0 +1,72 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title galary
+		include inc/head
+	body(class="p-galary")
+		include partials/header
+		
+		.b-common-wrap
+			+b('section').galary
+				.b-container
+					+b('span').title._black._no-padding Галерея
+					+b('nav').menu-a
+						+e('a')(href="#" data-count="204").item Все
+						+e('a')(href="#" data-count="20").item._active Живопись
+						+e('a')(href="#" data-count="20").item Графика
+						+e('a')(href="#" data-count="20").item Скульптура
+						+e('a')(href="#" data-count="20").item Постеры
+						+e('a')(href="#" data-count="20").item Репродукции
+					+e('').cols-wrap
+						+e('').col
+							+picture
+						+e('').col
+							+picture
+						+e('').col
+							+picture
+						+e('').col
+							+picture
+						+e('').col
+							+picture
+						+e('').col
+							+picture
+						+e('').col
+							+picture
+						+e('').col
+							+picture
+						+e('').col
+							+picture
+						+e('').col
+							+picture
+						+e('').col
+							+picture
+						+e('').col
+							+picture
+						+e('').col
+							+picture
+						+e('').col
+							+picture
+					+b('').navigation
+						+e('').left
+							+b('a')(href="#").prev-btn Предыдущая страница
+						+e('').middle
+							+b('').pagination
+								+e('a')(href="#").item 1
+								+e('a')(href="#").item._active 2
+								+e('a')(href="#").item 3
+								+e('a')(href="#").item 4
+								+e('a')(href="#").item 5
+								+e('a')(href="#").item ...
+								+e('a')(href="#").item 20
+						+e('').right
+							+b('a')(href="#").next-btn._active Следующая страница
+
+		include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

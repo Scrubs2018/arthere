@@ -1,0 +1,21 @@
+{
+  "name": "blank-project-website",
+  "description": "",
+  "main": "index.js",
+  "license": "BSD-2-Clause",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.12.0",
+    "normalize": "./source/stylus/vendor-css/normalize.css",
+    "js-helpers": "https://github.com/aivenreach/js-helpers.git",
+    "owl-carousel": "^1.3.2"
+  }
+}

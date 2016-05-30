@@ -1,0 +1,199 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title main
+		include inc/head
+	body(class="p-main")
+		include partials/header
+		
+		.b-common-wrap
+			+b('section').main-art
+				.b-container
+					+b('span').title._black artБлог
+					+e('').cols-wrap
+						+e('').col
+							+e('').item
+								+art-news
+							+e('').item
+								+b('').art-news
+									+e('img')(src="http://placehold.it/290x340").img
+									+e('').wrap
+										time.b-art-news__date 10.10.2015
+										+e('').watch
+											+b('span').eye 204
+											+b('span').comment 20
+									+e('span').title Искусство трансформации: 7 имен российского уличного и цифрового искусства
+									+e('').text
+										p Галереи и аукционные дома утратили  монополию на искусство. Вместо этого произведения появляются на стенах, рождаются
+									+e('').btn-wrap
+										+b('a')(href="#").btn._gray Читать полностью
+						+e('').col
+							+e('').item
+								+b('').art-news
+									+e('img')(src="http://placehold.it/290x340").img
+									+e('').wrap
+										time.b-art-news__date 10.10.2015
+										+e('').watch
+											+b('span').eye 204
+											+b('span').comment 20
+									+e('span').title Искусство трансформации: 7 имен российского уличного и цифрового искусства
+									+e('').text
+										p Галереи и аукционные дома утратили  монополию на искусство. Вместо этого произведения появляются на стенах, рождаются из последовательности нулей и единиц или демонстрируются в виде световых перформансов на модных событиях
+									+e('').btn-wrap
+										+b('a')(href="#").btn._gray Читать полностью
+							+e('').item
+								+art-news
+						+e('').col
+							+e('').item
+								+art-news
+							+e('').item
+								+b('').art-news
+									+e('img')(src="http://placehold.it/290x340").img
+									+e('').wrap
+										time.b-art-news__date 10.10.2015
+										+e('').watch
+											+b('span').eye 204
+											+b('span').comment 20
+									+e('span').title Искусство трансформации: 7 имен российского уличного и цифрового искусства
+									+e('').text
+										p Галереи и аукционные дома утратили  монополию на искусство. Вместо этого произведения появляются на стенах, рождаются из последовательности нулей и единиц или демонстрируются в виде световых перформансов на модных событиях
+									+e('').btn-wrap
+										+b('a')(href="#").btn._gray Читать полностью
+						+e('').col
+							+e('').item
+								+b('').art-news
+									+e('img')(src="http://placehold.it/290x340").img
+									+e('').wrap
+										time.b-art-news__date 10.10.2015
+										+e('').watch
+											+b('span').eye 204
+											+b('span').comment 20
+									+e('span').title Искусство трансформации: 7 имен российского уличного и цифрового искусства
+									+e('').text
+										p Галереи и аукционные
+									+e('').btn-wrap
+										+b('a')(href="#").btn._gray Читать полностью
+							+e('').item
+								+art-news
+					+e('').btn-wrap
+						+b('a')(href="#").btn-left._black Перейти <br> в блог
+			+b('section').main-school
+				.b-container
+					+b('span').title Школа
+					+e('').right
+						+b('').slider-calendar
+							+e('').slide
+								+e('').top
+									+e('span').title Календарь<br>мероприятий
+								+calendar
+								+e('').slide-wrap
+							+e('').slide
+								+e('').top
+									+e('span').title Календарь<br>мероприятий
+								+calendar
+								+e('').slide-wrap
+							+e('').slide
+								+e('').top
+									+e('span').title Календарь<br>мероприятий
+								+calendar
+								+e('').slide-wrap
+							+e('').slide
+								+e('').top
+									+e('span').title Календарь<br>мероприятий
+								+calendar
+								+e('').slide-wrap
+							+e('').slide
+								+e('').top
+									+e('span').title Календарь<br>мероприятий
+								+calendar
+								+e('').slide-wrap
+							+e('').slide
+								+e('').top
+									+e('span').title Календарь<br>мероприятий
+								+calendar
+								+e('').slide-wrap
+					+e('').left
+						+b('').event-a._horizont
+							+e('img')(src="http://placehold.it/290x290").img._horizont
+							+e('img')(src="http://placehold.it/900x290").img._tablet
+							+e('').horizont
+								+e('').wrap
+									time.b-event-a__date 10.10.2015
+									+b('span').eye._brown 204
+									+b('span').comment._brown 20
+								+e('').title
+									+b('span').title-a Все об иллюстрации. Мастер-класс от Андрея и Элины Гордеевых
+								+e('').text
+									p 5 января в 18:00 стартует четырехчасовой мастер-класс по искусству создания иллюстраций. Эли придумывает изображения на истинно женскую тематику, с удовольствием рисуя цветы, ангелочков, зверей и птиц, радостныхчленов семьи, детишек, красивые пейзажи и портреты. Андрей Гордеев работал над созданием иллюстраций для таких брендов как Kit-Kat, Coca-Cola, Toyota, Apple.
+								+e('').btn-wrap
+									+b('a')(href="#").btn Читать полностью
+					+e('').btn-wrap
+						+b('a')(href="#").btn-left._brown Перейти <br> в блог
+			+b('section').main-about
+				.b-container
+					+b('span').title._black О проекте
+					+e('img')(src="http://placehold.it/1200x290").img
+					+e('').text
+						p Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а такженабор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.
+					+e('').btn-wrap
+						+b('a')(href="#").btn._gray Подробнее о проекте
+			+b('section').main-galary
+				.b-container
+					+b('span').title._black Галерея
+					+e('span').text По вопросам приобретения представленных в галерее экспонатов обращайтесь в <a href="#">Контакты</a>
+					+e('').cols-wrap
+						+e('').col
+							+b('').picture
+								+e('').image-wrap
+									+e('img')(src="img/picture.jpg").img
+								+e('span').title Лиссабон
+								+e('span').autor Автор: Алиса Макарова
+								+e('span').art Живопись
+						+e('').col
+							+b('').picture
+								+e('').image-wrap
+									+e('img')(src="img/picture.jpg").img
+								+e('span').title Лиссабон
+								+e('span').autor Автор: Алиса Макарова
+								+e('span').art Живопись
+						+e('').col
+							+b('').picture
+								+e('').image-wrap
+									+e('img')(src="img/picture.jpg").img
+								+e('span').title Лиссабон
+								+e('span').autor Автор: Алиса Макарова
+								+e('span').art Живопись
+						+e('').col
+							+b('').picture
+								+e('').image-wrap
+									+e('img')(src="img/picture.jpg").img
+								+e('span').title Лиссабон
+								+e('span').autor Автор: Алиса Макарова
+								+e('span').art Живопись
+					+e('').btn-wrap
+						+b('a')(href="#").btn-left._black Смотреть все <br> работы
+			+b('section').main-link
+				.b-container
+					+e('').wrap
+						+b('').link
+							+b('span').title._black Обратная связь
+							+e('').item
+								+b('input')(type="text" placeholder="Ваше имя").input
+							+e('').item
+								+b('input')(type="text" placeholder="Ваш email").input
+							+e('').item
+								+b('input')(type="text" placeholder="Тема сообщения").input
+							+e('').item
+								textarea.b-textarea(rows="5" placeholder="Текст сообщения")
+					+e('').btn-wrap
+						+b('a')(href="#").btn-left._black Отправить<br>сообщение
+
+		include partials/footer-border
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

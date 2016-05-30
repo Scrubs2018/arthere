@@ -1,0 +1,75 @@
+mixin picture
+	+b('').picture
+		+e('').image-wrap
+			+e('img')(src="img/picture.jpg").img
+		+e('span').title Лиссабон
+		+e('span').autor Автор: Алиса Макарова
+
+mixin event
+	+b('').event-a
+		+e('img')(src="img/images.jpg").img
+		+e('').wrap
+			time.b-event-a__date 10.10.2015
+			+b('span').eye 204
+		+e('').title
+			+b('span').title-a Все об иллюстрации. Мастер-класс от Андрея и Элины Гордеевых
+		+e('').text
+			p 5 января в 18:00 стартует четырехчасовой мастер-класс по искусству создания иллюстраций. Эли придумывает изображения на истинно женскую тематику, с удовольствием рисуя цветы, ангелочков, зверей и птиц, радостныхчленов семьи, детишек, красивые пейзажи и портреты. Андрей Гордеев работал над созданием иллюстраций для таких брендов как Kit-Kat, Coca-Cola, Toyota, Apple.
+		+b('a')(href="#").btn Подробнее о мероприятии
+
+mixin art-news
+	+b('').art-news
+		+e('img')(src="http://placehold.it/290x180").img
+		+e('').wrap
+			time.b-art-news__date 10.10.2015
+			+e('').watch
+				+b('span').eye 204
+				+b('span').comment 20
+		+e('span').title Искусство трансформации: 7 имен российского уличного и цифрового искусства
+		+e('').text
+			p Галереи и аукционные дома утратили  монополию на искусство. Вместо этого произведения появляются на стенах, рождаются из последовательности нулей и единиц или демонстрируются в виде световых перформансов на модных событиях
+		+b('a')(href="#").btn._gray Читать полностью
+
+mixin calendar
+	+b('').calendar
+		+e('').row._month Февраль 2016
+		+e('').row
+			+e('a')(href="#").col 1
+			+e('a')(href="#").col 2
+			+e('a')(href="#").col 3
+			+e('a')(href="#").col 4
+			+e('a')(href="#").col 5
+			+e('a')(href="#").col._weekend 6
+			+e('a')(href="#").col._weekend._event 7
+		+e('').row
+			+e('a')(href="#").col 8
+			+e('a')(href="#").col 9
+			+e('a')(href="#").col 10
+			+e('a')(href="#").col 11
+			+e('a')(href="#").col 12
+			+e('a')(href="#").col._weekend 13
+			+e('a')(href="#").col._weekend 14
+		+e('').row
+			+e('a')(href="#").col 15
+			+e('a')(href="#").col 16
+			+e('a')(href="#").col._event 17
+			+e('a')(href="#").col 18
+			+e('a')(href="#").col 19
+			+e('a')(href="#").col._weekend 20
+			+e('a')(href="#").col._weekend._event 21
+		+e('').row
+			+e('a')(href="#").col 22
+			+e('a')(href="#").col 23
+			+e('a')(href="#").col 24
+			+e('a')(href="#").col 25
+			+e('a')(href="#").col 26
+			+e('a')(href="#").col._weekend 27
+			+e('a')(href="#").col._weekend 28
+		+e('').row
+			+e('a')(href="#").col 29
+			+e('a')(href="#").col 30
+			+e('a')(href="#").col 31
+			+e('a')(href="#").col._next-month 1
+			+e('a')(href="#").col._next-month 2
+			+e('a')(href="#").col._next-month 3
+			+e('a')(href="#").col._next-month 4

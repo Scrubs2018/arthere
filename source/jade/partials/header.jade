@@ -1,0 +1,35 @@
++b('header').header
+	.b-container
+		+b('a')(href="#").logo
+			+e('img')(src="img/logo.jpg").img
+		+b('nav').menu
+			+e('a')(href="#").btn-menu Меню
+			+e('a')(href="#").btn-menu-close Закрыть
+			+e('').wrap
+				+e('a')(href="#").item._active artБлог
+				+e('a')(href="#").item Школа
+				+e('a')(href="#").item Галерея
+				+e('a')(href="#").item О проекте
+				+e('a')(href="#").item Услуги
+				+e('a')(href="#" data-id="#link").item.im-popup-link Контакты
+		+b('form').search
+			+e('input')(type="text" placeholder="Поиск...").input
+			+e('input')(type="submit" value="").submit
+
+.im-popups
+	.im-popup#link
+		.im-popup-inside
+			+b('form').popup
+				+e('').top
+					+e('a')(href="#").close Закрыть
+					+b('span').title._black Заказать звонок
+				+e('label').item
+					+b('input')(type="text" placeholder="Ваше имя").input
+				+e('label').item
+					+b('input')(type="text" placeholder="Ваш email").input
+				+e('label').item
+					+b('input')(type="text" placeholder="Тема сообщения").input
+				+e('').item
+					textarea.b-textarea(rows="5" placeholder="Текст сообщения")
+				+e('').btn-wrap
+					+b('input')(type="submit" value="Отправить сообщение").btn-left._back

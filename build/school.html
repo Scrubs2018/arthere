@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>school</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300&subset=latin,cyrillic,latin-ext,cyrillic-ext,greek-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/common.min.css"><!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="p-school">
+    <header class="b-header">
+      <div class="b-container"><a href="#" class="b-logo"><img src="img/logo.jpg" class="b-logo__img" alt=""/></a>
+        <nav class="b-menu"><a href="#" class="b-menu__btn-menu">Меню</a><a href="#" class="b-menu__btn-menu-close">Закрыть</a>
+          <div class="b-menu__wrap"><a href="#" class="b-menu__item b-menu__item_active">artБлог</a><a href="#" class="b-menu__item">Школа</a><a href="#" class="b-menu__item">Галерея</a><a href="#" class="b-menu__item">О проекте</a><a href="#" class="b-menu__item">Услуги</a><a href="#" data-id="#link" class="b-menu__item im-popup-link">Контакты</a>
+          </div>
+        </nav>
+        <form class="b-search">
+          <input type="text" placeholder="Поиск..." class="b-search__input"/>
+          <input type="submit" value="" class="b-search__submit"/>
+        </form>
+      </div>
+    </header>
+    <div class="im-popups">
+      <div id="link" class="im-popup">
+        <div class="im-popup-inside">
+          <form class="b-popup">
+            <div class="b-popup__top"><a href="#" class="b-popup__close">Закрыть</a><span class="b-title b-title_black">Заказать звонок</span>
+            </div>
+            <label class="b-popup__item">
+              <input type="text" placeholder="Ваше имя" class="b-input"/>
+            </label>
+            <label class="b-popup__item">
+              <input type="text" placeholder="Ваш email" class="b-input"/>
+            </label>
+            <label class="b-popup__item">
+              <input type="text" placeholder="Тема сообщения" class="b-input"/>
+            </label>
+            <div class="b-popup__item">
+              <textarea rows="5" placeholder="Текст сообщения" class="b-textarea"></textarea>
+            </div>
+            <div class="b-popup__btn-wrap">
+              <input type="submit" value="Отправить сообщение" class="b-btn-left b-btn-left_back"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="b-common-wrap">
+      <section class="b-school">
+        <div class="b-container"><span class="b-title">Школа</span>
+          <div class="b-swiper">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div data-date="Март 2016" class="b-swiper__item swiper-slide"><span class="b-swiper__day">Пн</span><span class="b-swiper__number">1</span>
+                </div>
+                <div data-date="Апрель 2016" class="b-swiper__item swiper-slide swiper-slide_event"><span class="b-swiper__day">Вт</span><span class="b-swiper__number">2</span>
+                </div>
+                <div data-date="Май 2016" class="b-swiper__item swiper-slide"><span class="b-swiper__day">Ср</span><span class="b-swiper__number">3</span>
+                </div>
+                <div class="b-swiper__item swiper-slide"><span class="b-swiper__day">Чт</span><span class="b-swiper__number">4</span>
+                </div>
+                <div class="b-swiper__item swiper-slide"><span class="b-swiper__day">Пт</span><span class="b-swiper__number">5</span>
+                </div>
+                <div class="b-swiper__item swiper-slide swiper-slide_event swiper-slide_weekend"><span class="b-swiper__day">Сб</span><span class="b-swiper__number">6</span>
+                </div>
+                <div class="b-swiper__item swiper-slide swiper-slide_current swiper-slide_weekend"><span class="b-swiper__day">Вс</span><span class="b-swiper__number">7</span>
+                </div>
+                <div class="b-swiper__item swiper-slide"><span class="b-swiper__day">Пн</span><span class="b-swiper__number">8</span>
+                </div>
+                <div class="b-swiper__item swiper-slide swiper-slide_event"><span class="b-swiper__day">Вт</span><span class="b-swiper__number">9</span>
+                </div>
+                <div class="b-swiper__item swiper-slide"><span class="b-swiper__day">Ср</span><span class="b-swiper__number">10</span>
+                </div>
+                <div class="b-swiper__item swiper-slide"><span class="b-swiper__day">Чт</span><span class="b-swiper__number">11</span>
+                </div>
+                <div class="b-swiper__item swiper-slide"><span class="b-swiper__day">Пт</span><span class="b-swiper__number">12</span>
+                </div>
+                <div class="b-swiper__item swiper-slide swiper-slide_weekend"><span class="b-swiper__day">Сб</span><span class="b-swiper__number">13</span>
+                </div>
+                <div class="b-swiper__item swiper-slide swiper-slide_weekend"><span class="b-swiper__day">Вс</span><span class="b-swiper__number">14</span>
+                </div>
+              </div>
+              <div class="swiper-prev"></div>
+              <div class="swiper-next"></div>
+            </div>
+          </div>
+          <nav class="b-menu-a b-menu-a_padding"><a href="#" data-count="204" class="b-menu-a__item b-menu-a__item_brown">Все</a><a href="#" data-count="20" class="b-menu-a__item b-menu-a__item_brown_active">Живопись</a><a href="#" data-count="20" class="b-menu-a__item b-menu-a__item_brown">Графика</a>
+          </nav>
+          <div class="b-school__cols-wrap">
+            <div class="b-school__col">
+              <div class="b-event-a"><img src="img/images.jpg" class="b-event-a__img" alt=""/>
+                <div class="b-event-a__wrap">
+                  <time class="b-event-a__date">10.10.2015</time><span class="b-eye">204</span>
+                </div>
+                <div class="b-event-a__title"><span class="b-title-a">Все об иллюстрации. Мастер-класс от Андрея и Элины Гордеевых</span>
+                </div>
+                <div class="b-event-a__text">
+                  <p>5 января в 18:00 стартует четырехчасовой мастер-класс по искусству создания иллюстраций. Эли придумывает изображения на истинно женскую тематику, с удовольствием рисуя цветы, ангелочков, зверей и птиц, радостныхчленов семьи, детишек, красивые пейзажи и портреты. Андрей Гордеев работал над созданием иллюстраций для таких брендов как Kit-Kat, Coca-Cola, Toyota, Apple.</p>
+                </div><a href="#" class="b-btn">Подробнее о мероприятии</a>
+              </div>
+            </div>
+            <div class="b-school__col">
+              <div class="b-event-a"><img src="img/images.jpg" class="b-event-a__img" alt=""/>
+                <div class="b-event-a__wrap">
+                  <time class="b-event-a__date">10.10.2015</time><span class="b-eye">204</span>
+                </div>
+                <div class="b-event-a__title"><span class="b-title-a">Все об иллюстрации. Мастер-класс от Андрея и Элины Гордеевых</span>
+                </div>
+                <div class="b-event-a__text">
+                  <p>5 января в 18:00 стартует четырехчасовой мастер-класс по искусству создания иллюстраций. Эли придумывает изображения на истинно женскую тематику, с удовольствием рисуя цветы, ангелочков, зверей и птиц, радостныхчленов семьи, детишек, красивые пейзажи и портреты. Андрей Гордеев работал над созданием иллюстраций для таких брендов как Kit-Kat, Coca-Cola, Toyota, Apple.</p>
+                </div><a href="#" class="b-btn">Подробнее о мероприятии</a>
+              </div>
+            </div>
+            <div class="b-school__col">
+              <div class="b-event-a"><img src="img/images.jpg" class="b-event-a__img" alt=""/>
+                <div class="b-event-a__wrap">
+                  <time class="b-event-a__date">10.10.2015</time><span class="b-eye">204</span>
+                </div>
+                <div class="b-event-a__title"><span class="b-title-a">Все об иллюстрации. Мастер-класс от Андрея и Элины Гордеевых</span>
+                </div>
+                <div class="b-event-a__text">
+                  <p>5 января в 18:00 стартует четырехчасовой мастер-класс по искусству создания иллюстраций. Эли придумывает изображения на истинно женскую тематику, с удовольствием рисуя цветы, ангелочков, зверей и птиц, радостныхчленов семьи, детишек, красивые пейзажи и портреты. Андрей Гордеев работал над созданием иллюстраций для таких брендов как Kit-Kat, Coca-Cola, Toyota, Apple.</p>
+                </div><a href="#" class="b-btn">Подробнее о мероприятии</a>
+              </div>
+            </div>
+            <div class="b-school__col">
+              <div class="b-event-a"><img src="img/images.jpg" class="b-event-a__img" alt=""/>
+                <div class="b-event-a__wrap">
+                  <time class="b-event-a__date">10.10.2015</time><span class="b-eye">204</span>
+                </div>
+                <div class="b-event-a__title"><span class="b-title-a">Все об иллюстрации. Мастер-класс от Андрея и Элины Гордеевых</span>
+                </div>
+                <div class="b-event-a__text">
+                  <p>5 января в 18:00 стартует четырехчасовой мастер-класс по искусству создания иллюстраций. Эли придумывает изображения на истинно женскую тематику, с удовольствием рисуя цветы, ангелочков, зверей и птиц, радостныхчленов семьи, детишек, красивые пейзажи и портреты. Андрей Гордеев работал над созданием иллюстраций для таких брендов как Kit-Kat, Coca-Cola, Toyota, Apple.</p>
+                </div><a href="#" class="b-btn">Подробнее о мероприятии</a>
+              </div>
+            </div>
+            <div class="b-school__col">
+              <div class="b-event-a"><img src="img/images.jpg" class="b-event-a__img" alt=""/>
+                <div class="b-event-a__wrap">
+                  <time class="b-event-a__date">10.10.2015</time><span class="b-eye">204</span>
+                </div>
+                <div class="b-event-a__title"><span class="b-title-a">Все об иллюстрации. Мастер-класс от Андрея и Элины Гордеевых</span>
+                </div>
+                <div class="b-event-a__text">
+                  <p>5 января в 18:00 стартует четырехчасовой мастер-класс по искусству создания иллюстраций. Эли придумывает изображения на истинно женскую тематику, с удовольствием рисуя цветы, ангелочков, зверей и птиц, радостныхчленов семьи, детишек, красивые пейзажи и портреты. Андрей Гордеев работал над созданием иллюстраций для таких брендов как Kit-Kat, Coca-Cola, Toyota, Apple.</p>
+                </div><a href="#" class="b-btn">Подробнее о мероприятии</a>
+              </div>
+            </div>
+            <div class="b-school__col">
+              <div class="b-event-a"><img src="img/images.jpg" class="b-event-a__img" alt=""/>
+                <div class="b-event-a__wrap">
+                  <time class="b-event-a__date">10.10.2015</time><span class="b-eye">204</span>
+                </div>
+                <div class="b-event-a__title"><span class="b-title-a">Все об иллюстрации. Мастер-класс от Андрея и Элины Гордеевых</span>
+                </div>
+                <div class="b-event-a__text">
+                  <p>5 января в 18:00 стартует четырехчасовой мастер-класс по искусству создания иллюстраций. Эли придумывает изображения на истинно женскую тематику, с удовольствием рисуя цветы, ангелочков, зверей и птиц, радостныхчленов семьи, детишек, красивые пейзажи и портреты. Андрей Гордеев работал над созданием иллюстраций для таких брендов как Kit-Kat, Coca-Cola, Toyota, Apple.</p>
+                </div><a href="#" class="b-btn">Подробнее о мероприятии</a>
+              </div>
+            </div>
+            <div class="b-school__col">
+              <div class="b-event-a"><img src="img/images.jpg" class="b-event-a__img" alt=""/>
+                <div class="b-event-a__wrap">
+                  <time class="b-event-a__date">10.10.2015</time><span class="b-eye">204</span>
+                </div>
+                <div class="b-event-a__title"><span class="b-title-a">Все об иллюстрации. Мастер-класс от Андрея и Элины Гордеевых</span>
+                </div>
+                <div class="b-event-a__text">
+                  <p>5 января в 18:00 стартует четырехчасовой мастер-класс по искусству создания иллюстраций. Эли придумывает изображения на истинно женскую тематику, с удовольствием рисуя цветы, ангелочков, зверей и птиц, радостныхчленов семьи, детишек, красивые пейзажи и портреты. Андрей Гордеев работал над созданием иллюстраций для таких брендов как Kit-Kat, Coca-Cola, Toyota, Apple.</p>
+                </div><a href="#" class="b-btn">Подробнее о мероприятии</a>
+              </div>
+            </div>
+            <div class="b-school__col">
+              <div class="b-event-a"><img src="img/images.jpg" class="b-event-a__img" alt=""/>
+                <div class="b-event-a__wrap">
+                  <time class="b-event-a__date">10.10.2015</time><span class="b-eye">204</span>
+                </div>
+                <div class="b-event-a__title"><span class="b-title-a">Все об иллюстрации. Мастер-класс от Андрея и Элины Гордеевых</span>
+                </div>
+                <div class="b-event-a__text">
+                  <p>5 января в 18:00 стартует четырехчасовой мастер-класс по искусству создания иллюстраций. Эли придумывает изображения на истинно женскую тематику, с удовольствием рисуя цветы, ангелочков, зверей и птиц, радостныхчленов семьи, детишек, красивые пейзажи и портреты. Андрей Гордеев работал над созданием иллюстраций для таких брендов как Kit-Kat, Coca-Cola, Toyota, Apple.</p>
+                </div><a href="#" class="b-btn">Подробнее о мероприятии</a>
+              </div>
+            </div>
+            <div class="b-school__col">
+              <div class="b-event-a"><img src="img/images.jpg" class="b-event-a__img" alt=""/>
+                <div class="b-event-a__wrap">
+                  <time class="b-event-a__date">10.10.2015</time><span class="b-eye">204</span>
+                </div>
+                <div class="b-event-a__title"><span class="b-title-a">Все об иллюстрации. Мастер-класс от Андрея и Элины Гордеевых</span>
+                </div>
+                <div class="b-event-a__text">
+                  <p>5 января в 18:00 стартует четырехчасовой мастер-класс по искусству создания иллюстраций. Эли придумывает изображения на истинно женскую тематику, с удовольствием рисуя цветы, ангелочков, зверей и птиц, радостныхчленов семьи, детишек, красивые пейзажи и портреты. Андрей Гордеев работал над созданием иллюстраций для таких брендов как Kit-Kat, Coca-Cola, Toyota, Apple.</p>
+                </div><a href="#" class="b-btn">Подробнее о мероприятии</a>
+              </div>
+            </div>
+            <div class="b-school__col">
+              <div class="b-event-a"><img src="img/images.jpg" class="b-event-a__img" alt=""/>
+                <div class="b-event-a__wrap">
+                  <time class="b-event-a__date">10.10.2015</time><span class="b-eye">204</span>
+                </div>
+                <div class="b-event-a__title"><span class="b-title-a">Все об иллюстрации. Мастер-класс от Андрея и Элины Гордеевых</span>
+                </div>
+                <div class="b-event-a__text">
+                  <p>5 января в 18:00 стартует четырехчасовой мастер-класс по искусству создания иллюстраций. Эли придумывает изображения на истинно женскую тематику, с удовольствием рисуя цветы, ангелочков, зверей и птиц, радостныхчленов семьи, детишек, красивые пейзажи и портреты. Андрей Гордеев работал над созданием иллюстраций для таких брендов как Kit-Kat, Coca-Cola, Toyota, Apple.</p>
+                </div><a href="#" class="b-btn">Подробнее о мероприятии</a>
+              </div>
+            </div>
+          </div>
+          <div class="b-navigation">
+            <div class="b-navigation__left"><a href="#" class="b-prev-btn">Предыдущая страница</a>
+            </div>
+            <div class="b-navigation__middle">
+              <div class="b-pagination"><a href="#" class="b-pagination__item">1</a><a href="#" class="b-pagination__item b-pagination__item_active">2</a><a href="#" class="b-pagination__item">3</a><a href="#" class="b-pagination__item">4</a><a href="#" class="b-pagination__item">...</a><a href="#" class="b-pagination__item">20</a>
+              </div>
+            </div>
+            <div class="b-navigation__right"><a href="#" class="b-next-btn b-next-btn_active">Следующая страница</a>
+            </div>
+          </div>
+          <div class="b-school__bottom-input">
+            <div class="b-school__left">
+              <input type="text" placeholder="Введите ваш email" class="b-input"/>
+            </div>
+            <div class="b-school__right">
+              <input type="submit" value="Подписаться на анонсы мероприятий" class="b-btn b-btn_white"/>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="b-footer">
+      <div class="b-container">
+        <div class="b-footer__wrap"><a href="#" class="b-footer__logo"><img src="img/logo-footer.jpg" class="b-footer__image" alt=""/></a>
+          <div class="b-footer__content">
+            <div class="b-footer__top">
+              <nav class="b-menu-footer"><a href="#" class="b-menu-footer__item">artБлог</a><a href="#" class="b-menu-footer__item">Школа</a><a href="#" class="b-menu-footer__item">Галерея</a><a href="#" class="b-menu-footer__item"><span>О проекте</span></a><a href="#" class="b-menu-footer__item">Услуги</a><a href="#" class="b-menu-footer__item">Контакты</a>
+              </nav>
+            </div>
+            <div class="b-footer__bottom">
+              <div class="b-footer__left"><span class="b-footer__copyright">© 2015 искусство здесь.</span><span class="b-footer__text">Использование материалов разрешено только с предварительного согласия</span><span class="b-footer__text">правообладателей. Все права на картинки и тексты принадлежат их авторам.</span>
+              </div>
+              <div class="b-footer__middle"><a href="#" class="b-footer__item b-footer__item_vk"></a><a href="#" class="b-footer__item b-footer__item_insta"></a><a href="#" class="b-footer__item b-footer__item_face"></a><a href="#" class="b-footer__item b-footer__item_g"></a><a href="#" class="b-footer__item b-footer__item_skype"></a>
+              </div>
+              <div class="b-footer__middle b-footer__middle_hide"><a href="#" class="b-footer__item b-footer__item_vk"></a><a href="#" class="b-footer__item b-footer__item_insta"></a><a href="#" class="b-footer__item b-footer__item_face"></a><a href="#" class="b-footer__item b-footer__item_g"></a><a href="#" class="b-footer__item b-footer__item_skype"></a>
+              </div>
+              <div class="b-footer__left b-footer__left_hide"><span class="b-footer__copyright">© 2015 искусство здесь.</span><span class="b-footer__text">Использование материалов разрешено только с предварительного согласия правообладателей. Все права на картинки и тексты принадлежат их авторам.</span>
+              </div><a href="#" class="b-footer__right"><img src="img/swd.png" class="b-footer__swd" alt=""/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/client.min.js"></script>
+  </body>
+</html>

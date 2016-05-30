@@ -1,0 +1,40 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head 
+		title contact
+		include inc/head
+	body(class="p-contact")
+		include partials/header
+		
+		.b-common-wrap
+			+b('section').contact
+				.b-container
+					+e('').left
+						+b('').address
+							+b('span').title._black Контакты
+							+e('').item._phone +375 (29) 100-10-10; +375 (33) 100-10-10
+							+e('a')(href="#").item._email info@iskusstvo.by
+							+e('a')(href="#").item._skype iskusstvo_zdes
+					+e('').right
+						+b('form').link
+							+b('span').title._black Обратная связь
+							+e('').item
+								+b('input')(type="text" placeholder="Ваше имя").input
+							+e('').item
+								+b('input')(type="text" placeholder="Ваш email").input
+							+e('').item
+								+b('input')(type="text" placeholder="Тема сообщения").input
+							+e('').item
+								textarea.b-textarea(rows="5" placeholder="Текст сообщения")
+							+e('').btn-wrap
+								+b('input')(type="submit" value="Отправить сообщение").btn-right._back
+
+		include partials/footer-border
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

@@ -1,0 +1,112 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title school
+		include inc/head
+	body(class="p-school")
+		include partials/header
+		
+		.b-common-wrap
+			+b('section').school
+				.b-container
+					+b('span').title Школа
+					+b('').swiper
+						.swiper-container
+							.swiper-wrapper
+								+e('')(data-date="Март 2016").item.swiper-slide
+									+e('span').day Пн
+									+e('span').number 1
+								+e('')(data-date="Апрель 2016").item.swiper-slide.swiper-slide_event
+									+e('span').day Вт
+									+e('span').number 2
+								+e('')(data-date="Май 2016").item.swiper-slide
+									+e('span').day Ср
+									+e('span').number 3
+								+e('').item.swiper-slide
+									+e('span').day Чт
+									+e('span').number 4
+								+e('').item.swiper-slide
+									+e('span').day Пт
+									+e('span').number 5
+								+e('').item.swiper-slide.swiper-slide_weekend.swiper-slide_event
+									+e('span').day Сб
+									+e('span').number 6
+								+e('').item.swiper-slide.swiper-slide_weekend.swiper-slide_current
+									+e('span').day Вс
+									+e('span').number 7
+								+e('').item.swiper-slide
+									+e('span').day Пн
+									+e('span').number 8
+								+e('').item.swiper-slide.swiper-slide_event
+									+e('span').day Вт
+									+e('span').number 9
+								+e('').item.swiper-slide
+									+e('span').day Ср
+									+e('span').number 10
+								+e('').item.swiper-slide
+									+e('span').day Чт
+									+e('span').number 11
+								+e('').item.swiper-slide
+									+e('span').day Пт
+									+e('span').number 12
+								+e('').item.swiper-slide.swiper-slide_weekend
+									+e('span').day Сб
+									+e('span').number 13
+								+e('').item.swiper-slide.swiper-slide_weekend
+									+e('span').day Вс
+									+e('span').number 14
+							.swiper-prev
+							.swiper-next
+					+b('nav').menu-a._padding
+						+e('a')(href="#" data-count="204").item._brown Все
+						+e('a')(href="#" data-count="20").item._brown_active Живопись
+						+e('a')(href="#" data-count="20").item._brown Графика
+					+e('').cols-wrap
+						+e('').col
+							+event
+						+e('').col
+							+event
+						+e('').col
+							+event
+						+e('').col
+							+event
+						+e('').col
+							+event
+						+e('').col
+							+event
+						+e('').col
+							+event
+						+e('').col
+							+event
+						+e('').col
+							+event
+						+e('').col
+							+event
+					+b('').navigation
+						+e('').left
+							+b('a')(href="#").prev-btn Предыдущая страница
+						+e('').middle
+							+b('').pagination
+								+e('a')(href="#").item 1
+								+e('a')(href="#").item._active 2
+								+e('a')(href="#").item 3
+								+e('a')(href="#").item 4
+								+e('a')(href="#").item ...
+								+e('a')(href="#").item 20
+						+e('').right
+							+b('a')(href="#").next-btn._active Следующая страница
+					+e('').bottom-input
+						+e('').left
+							+b('input')(type="text" placeholder="Введите ваш email").input
+						+e('').right
+							+b('input')(type="submit" value="Подписаться на анонсы мероприятий").btn._white
+
+		include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

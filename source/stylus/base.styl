@@ -1,0 +1,179 @@
+html
+	height 100%
+	font-size $rootFontSize, false
+
+body
+	font-family 'Roboto'
+	min-height 100%
+	color #2a2a2a
+	position relative
+	-webkit-text-size-adjust 100%
+	-webkit-font-size-adjust 100%
+
+img
+	display block
+
+h1, h2, h3, h4, h5
+	color #000
+	font-family 'Book Antiqua'
+	line-height 18px
+	margin-bottom 10px
+
+h1
+	font-size 25px
+h2
+	font-size 22px
+h3
+	font-size 20px
+h4
+	font-size 18px
+h5
+	font-size 17px
+
+table
+	border-collapse separate
+	border 1px solid #e0e0e0
+	border-radius 15px 15px 0 0
+	width 92%
+	margin-left 50px
+	margin-bottom 20px
+	@media $max_sm
+		margin-left 20px
+		width 94%
+	@media $max_xs
+		width 90%
+td, th
+	height 50px
+	width 50px
+td, th
+	text-align center
+	vertical-align middle
+	border none
+td + td, th + th
+	border-left 1px solid #e0e0e0
+th, tr td
+	border-bottom 1px solid #e0e0e0
+tfoot td
+	border-bottom none
+td:first-child
+	border-left none
+td:last-child
+	border-right none
+thead +tr td,  tr+ tr td, tfoot td
+	border-top none
+
+th,td
+	font-size 16px
+	color #2a2a2a
+	line-height 19px
+	text-align left
+	padding 18px
+
+th
+	color #a9a9a9
+	font-size 14px
+	font-weight 400
+	text-transform uppercase
+
+p
+	font-size 16px
+	color #2a2a2a
+	line-height 24px
+	margin-bottom 20px
+	margin-top 20px
+
+ul, ol
+	margin-bottom 20px
+	li
+		margin-bottom 10px
+		line-height 24px
+		list-style-position inside
+
+ul
+	padding 0 50px
+	@media $max_sm
+		padding 0 20px
+
+ul li
+	list-style-image url(../img/dot.png)
+
+i, em
+	font-style italic
+
+b, strong
+	font-weight 600
+
+button
+	border 0
+
+a
+	cursor pointer
+
+.-no-border, _no-border *
+	border 0
+
+._img-left,
+._img-right
+	margin-bottom 14px
+
+._img-left
+	float left
+	margin-right 14px
+
+._img-right
+	float right
+	margin-left 14px
+
+.-text-center
+	text-align center
+
+.-hidden-desktop
+	display none !important
+	@media $max_xs
+		display block !important
+
+.-hidden-mobile
+	@media $max_xs
+		display none !important
+
+.-text
+	> p
+		&:last-child
+			margin-bottom 0
+
+.fancybox-wrap,
+.fancybox-wrap *
+	-webkit-box-sizing content-box
+	-moz-box-sizing content-box
+	box-sizing content-box
+
+.owl-carousel .owl-item
+	-webkit-transform translateZ(0)
+
+
+p
+	&.error
+		position absolute
+		right 10px
+		margin 0px
+		line-height 36px
+		color red
+
+input, textarea
+	&.error
+		border 1px solid red
+
+.b-popup
+	p
+		&.error
+			right 50px
+
+._rel
+	position relative
+
+._dnone
+	display none
+
+.search-word
+	color #c88e42
+	font-weight 700
